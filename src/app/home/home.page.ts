@@ -35,15 +35,15 @@ export class HomePage {
     // })
     
   }
-  // setQuestion(){
-  //   // console.log(this.questions.length); works! Length=10
-  //   // if(this.questions.length > 0){
-  //   for(var quest in this.questions){
-  //     console.log(quest);
-  //   this.activeQuestion = this.questions[quest];
-  //   this.domCtrl.write(() => {
-  //     document.documentElement.style.setProperty('--ion-background-color', this.activeQuestion.background);
-  //   }
-  //   );
-  // }}
+  setQuestion(){
+    // console.log(this.questions.length); works! Length=10
+    // if(this.questions.length > 0){
+    for(var quest in this.questions){
+      console.log(quest);
+    this.activeQuestion = this.questions[quest];
+    this.domCtrl.write(() => {
+      document.documentElement.style.setProperty('--ion-background-color', this.activeQuestion.background);
+    }
+    );
+  }}
   }
