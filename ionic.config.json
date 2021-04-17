@@ -1,0 +1,8 @@
+{
+  "name": "BeachHacks",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "ffc8ac16"
+}
