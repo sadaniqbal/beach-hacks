@@ -26,13 +26,13 @@ export class HomePage {
   }
 
   ngOnInit() {
-    this.httpClient.get('assets/questions.json').subscribe((res: any) =>{
-      this.questions = res.questions;
-      // this.setQuestion();  
-      console.log(this.questions);
-      this.domCtrl.write(() => {
-        document.documentElement.style.setProperty('--ion-background-color', this.questions.background);
-    })
+    // this.httpClient.get('assets/questions.json').subscribe((res: any) =>{
+    //   this.questions = res.questions;
+    //   // this.setQuestion();  
+    //   console.log(this.questions);
+    //   this.domCtrl.write(() => {
+    //     document.documentElement.style.setProperty('--ion-background-color', this.questions.background);
+    // })
     
   }
   // setQuestion(){
@@ -46,4 +46,4 @@ export class HomePage {
   //   }
   //   );
   // }}
-}
+  }
