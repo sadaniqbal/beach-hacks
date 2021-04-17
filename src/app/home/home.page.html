@@ -1,13 +1,12 @@
-
 <ion-content tappable padding>
   <div class="question-container">
     <form>
   <h3 align=center *ngFor="let question of questions">{{ questions.question }}</h3>
   <!-- The activeQuestion outside the tag is making it work! -->
-  <input class="radio" type="radio" value="o1" name="o1"> {{activeQuestion.o1}} <br>
-  <input class="radio" type="radio" value="o2" name="o2"> {{activeQuestion.o2}} <br>
-  <input class="radio" type="radio" value="o3" name="o3"> {{activeQuestion.o3}} <br>
-  <input class="radio" type="radio" value="o4" name="o4"> {{activeQuestion.o4}} <br>
+  <input class="radio" type="radio" value="o1" name="ansradio"> {{activeQuestion.o1}} <br>
+  <input class="radio" type="radio" value="o2" name="ansradio"> {{activeQuestion.o2}} <br>
+  <input class="radio" type="radio" value="o3" name="ansradio"> {{activeQuestion.o3}} <br>
+  <input class="radio" type="radio" value="o4" name="ansradio"> {{activeQuestion.o4}} <br>
   <a class="btn blue" (click)="setQuestion()">NEXT</a>
   <!-- <br><button (click)="setQuestion()">Next!</button> -->
 </form>
