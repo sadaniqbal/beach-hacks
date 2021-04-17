@@ -1,7 +1,8 @@
 {
   "name": "BeachHacks",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular",
   "id": "ffc8ac16"
